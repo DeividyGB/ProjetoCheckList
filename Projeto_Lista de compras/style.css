@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Numans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-family: Krona One, sans-serif;
+}
+
+body {
+    font-family: Numans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #26327F, #000000);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main {
+    margin-top: 64px;
+    padding: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.inputCompra{
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 12px 16px 12px 16px;
+    height: 43px;
+    font-size: 16px;
+    width: 307px;
+}
+
+.inputCompra::placeholder{
+    font-family: Numans, sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.containerCompra{
+    font-family: Numans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.containerOptions{
+    margin-left: 40%;
+    margin-bottom: 5px;
+}
+
+.checkBoxContainer{
+    width: 24px;
+    height: 24px;
+}
