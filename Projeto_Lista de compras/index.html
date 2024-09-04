@@ -8,29 +8,27 @@
 </head>
 <body>
     <main>
-        <img src="Assets/paper bag with groceries 1.png" alt="Ilustração Compras">
-        <input type="text" placeholder="Digite o item que deseja adicionar" class="inputCompra">
-        <button>Salvar item</button>
-
+        <form>
+            <img src="Assets/paper bag with groceries 1.png" alt="Ilustração Compras">
+            <input type="text" placeholder="Digite o item que deseja adicionar" class="inputCompra" id="inputPurchase"> <!-- Corrigido ID -->
+            <button class="buttonSave" id="buttonSave">Salvar item</button>
+        </form>
         <h2>Lista de Compras</h2>
         <hr />
-
-        <ul>
+        <ul id="itemList">
             <li>
                 <div class="containerCompra">
                     <input type="checkbox" class="checkBoxContainer">
                     <p>Queijo Mussarela</p>
-
                     <div class="containerOptions">
-                        <button><img src="Assets/Excluir.png" alt="delete"></button>
-                        <button><img src="Assets/Edição.png" alt="Editar"></button>
+                        <button class="editButtons"> <img src="Assets/Excluir.png" alt="delete" class="imgButton"></button>
+                        <button class="editButtons"> <img src="Assets/Edição.png" alt="Editar" class="imgButton"></button>
                     </div>
                 </div>   
                 <p>Segunda-feira (31/10/2022) às 08:30</p>
             </li>
         </ul>
     </main>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
