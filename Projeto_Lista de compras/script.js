@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imgEdit.classList.add("imgButton");
 
         const date = new Date()
-        console.log(date);
+        console.log(date.getDate().toString());
 
         
         containerOptions.appendChild(buttonDelete);
