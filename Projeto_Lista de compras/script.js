@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if(purchase.value === ""){
             alert("Por favor, introduza um item.");
-            return;
         }
 
         const listItem = document.createElement("li");
@@ -25,15 +24,26 @@ document.addEventListener("DOMContentLoaded", () => {
         const containerOptions = document.createElement("div");
         containerOptions.classList.add("containerOptions");
 
-        const buttonSave = document.createElement("button");
-        const img = document.createElement("img")
-        buttonSave.appendChild(img);
-        buttonSave.classList.add("editButtons");
-        img.src = "Assets/Excluir.png";
-        img.classList.add("imgButton");
+        const buttonDelete = document.createElement("button");
+        const imgDelete = document.createElement("img")
+        buttonDelete.appendChild(imgDelete);
+        buttonDelete.classList.add("editButtons");
+        imgDelete.src = "Assets/Excluir.png";
+        imgDelete.classList.add("imgButton");
+        
+        const buttonEdit = document.createElement("button");
+        const imgEdit = document.createElement("img");
+        buttonEdit.appendChild(imgEdit);
+        buttonEdit.classList.add("editButtons")
+        imgEdit.src = "Assets/Edição.png";
+        imgEdit.classList.add("imgButton");
 
+        const date = new Date()
+        console.log(date);
 
-        containerOptions.appendChild(buttonSave);
+        
+        containerOptions.appendChild(buttonDelete);
+        containerOptions.appendChild(buttonEdit);
         listItem.appendChild(containerPurchase);
         itemList.appendChild(listItem);
 

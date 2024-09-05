@@ -37,6 +37,10 @@ ul{
     list-style: none;
 }
 
+.containerAllInfo{
+    margin-bottom: 20px;
+}
+
 hr{
     border: none;
     border-bottom: dotted 3px #F55B64;
